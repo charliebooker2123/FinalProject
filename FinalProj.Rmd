@@ -5,14 +5,14 @@ date: "October 19, 2018"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, cache = TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(dplyr)
 library(knitr)
 library(readxl)
 library(janitor)
-data <- read_excel("CACCF.xlsx") %>%
+vietnam <- read_excel("CACCF.xlsx") %>%
   clean_names()
 ```
 
@@ -25,6 +25,10 @@ glimpse(data)
 summary(data)
 
 #I will be using this data to compare casualties among different race groups, as well a military branch, age, and cause of death during the Vietnam war. The data shows that there were 58,193 casualties with the average age being 23 years old.
+
+```
+
+```{r}
 
 ```
 
